@@ -17,7 +17,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import petfriends.model.Mem_VO;
 import petfriends.service.MemService;
-import util.UploadPhoto;
+import petfriends.util.UploadPhoto;
 
 @WebServlet("/mupdel.do")
 @MultipartConfig()

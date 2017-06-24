@@ -52,7 +52,7 @@ public class Share_JDBC {
 //		Share_VO sbean	=  new Share_VO();
 //		sbean.setShare_Id(1);
 //		sbean.setShare_content("123");
-//		sbean.setShare_date(sdf.format(new java.util.Date().getTime()));
+//		sbean.setShare_date(sdf.format(new java.petfriends.util.Date().getTime()));
 //		boolean aa = s.Update_share(sbean);
 //		System.out.println(aa);
 		

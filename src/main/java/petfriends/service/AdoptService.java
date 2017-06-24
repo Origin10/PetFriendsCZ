@@ -32,7 +32,7 @@ public class AdoptService {
 		bean.setFindCity("新北市");
 		bean.setFindDistrict("中和區");
 		bean.setFindRoad("民德路");
-		bean.setFindDate(new java.util.Date());
+		bean.setFindDate(new java.petfriends.util.Date());
 		bean.setPetGender("");
 		bean.setPetNotes("She is so cute.");
 

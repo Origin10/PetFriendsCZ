@@ -18,7 +18,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 import petfriends.model.Mem_VO;
 import petfriends.model.Pet_VO;
 import petfriends.service.PetService;
-import util.UploadPhoto;
+import petfriends.util.UploadPhoto;
 
 @WebServlet(urlPatterns = { "/insertpet.do", "/update.do" })
 @MultipartConfig()

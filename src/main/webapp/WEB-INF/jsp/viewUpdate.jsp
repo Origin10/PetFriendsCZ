@@ -188,7 +188,7 @@
 				<tr>
 					<td>上傳圖片：</td>
 					<td>
-					<c:set var = "now" value = "<%=new java.util.Date()%>" />
+					<c:set var = "now" value = "<%=new java.petfriends.util.Date()%>" />
 					<c:forEach var="photourls" items="${insert.adoptPhotoUrlBeans}" end="1">
 							<img src="${pageContext.request.contextPath}${photourls.photoUrl}?${now.time}" width="200">
 						</c:forEach></td>

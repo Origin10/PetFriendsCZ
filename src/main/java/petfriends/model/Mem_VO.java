@@ -3,6 +3,7 @@ package petfriends.model;
 
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -19,7 +20,14 @@ public class Mem_VO  implements Serializable {
 	private byte[] mem_photo;
 	private String mem_info;
 	private java.util.Date mem_regtime;
-	
+
+	//MEM_VO 新增的部分
+
+	private ShoppingCart shoppingCart;
+	private List<MemShipping> memShippingList;
+	private List<UserPayment> UserPaymentList;
+	private List<Order> orderList;
+
 
 	@Override
 	public String toString() {
@@ -70,6 +78,36 @@ public class Mem_VO  implements Serializable {
 		this.mem_regtime = mem_regtime;
 	}
 
-	
+
+	//MEM_VO 新增的部分
+
+
+	public ShoppingCart getShoppingCart() {
+		return shoppingCart;
+	}
+	public void setShoppingCart(ShoppingCart shoppingCart) {
+		this.shoppingCart = shoppingCart;
+	}
+	public List<MemShipping> getMemShippingList() {
+		return memShippingList;
+	}
+	public void setMemShippingList(List<MemShipping> memShippingList) {
+		this.memShippingList = memShippingList;
+	}
+	public List<UserPayment> getUserPaymentList() {
+		return UserPaymentList;
+	}
+	public void setUserPaymentList(List<UserPayment> userPaymentList) {
+		UserPaymentList = userPaymentList;
+	}
+	public List<Order> getOrderList() {
+		return orderList;
+	}
+	public void setOrderList(List<Order> orderList) {
+		this.orderList = orderList;
+	}
+
+
+
 
 }

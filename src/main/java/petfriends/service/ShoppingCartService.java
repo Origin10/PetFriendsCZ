@@ -1,0 +1,9 @@
+package petfriends.service;
+
+import petfriends.model.ShoppingCart;
+
+public interface ShoppingCartService {
+	ShoppingCart updateShoppingCart(ShoppingCart shoppingCart);
+	
+	void clearShoppingCart(ShoppingCart shoppingCart);
+}
