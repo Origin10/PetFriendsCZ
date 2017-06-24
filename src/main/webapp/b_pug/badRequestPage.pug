@@ -1,7 +1,7 @@
 //output:../badRequestPage.jsp, doctype:transitional
 
-//- <%@ page language="java" contentType="text/html; ISO-8859-1" pageEncoding="UTF-8" %>
-//- <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ page language="java" contentType="text/html; ISO-8859-1" pageEncoding="UTF-8" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
 html(lang='en', xmlns:th='http://www.w3.org/1000/xhtml')
   head
@@ -9,14 +9,14 @@ html(lang='en', xmlns:th='http://www.w3.org/1000/xhtml')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     title PetFriends
     // Bootstrap core CSS
-    link(href='css/bootstrap.min.css', rel='stylesheet')
-    link(href='css/non-responsive.css', rel='stylesheet')
+    link(href='${pageContext.request.contextPath}css/bootstrap.min.css', rel='stylesheet')
+    link(href='${pageContext.request.contextPath}css/non-responsive.css', rel='stylesheet')
     // data table
-    link(href='css/jquery.dataTables.min.css', rel='stylesheet')
-    link(href='css/dataTables.bootstrap.min.css', rel='stylesheet')
-    link(href='css/font-awesome.min.css', rel='stylesheet')
+    link(href='${pageContext.request.contextPath}css/jquery.dataTables.min.css', rel='stylesheet')
+    link(href='${pageContext.request.contextPath}css/dataTables.bootstrap.min.css', rel='stylesheet')
+    link(href='${pageContext.request.contextPath}css/font-awesome.min.css', rel='stylesheet')
     // Custom styles for this template
-    link(href='css/CZ.css', rel='stylesheet')
+    link(href='${pageContext.request.contextPath}css/CZ.css', rel='stylesheet')
     //- link(rel='icon', href='/imgs/applie-touch-icon.png')
   body
     nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
@@ -133,7 +133,6 @@ html(lang='en', xmlns:th='http://www.w3.org/1000/xhtml')
             a(href='#') 聯絡我們
           li
             a(href='#') 網站地圖
-    script(src='js/jquery.min.js')
-    script(src='js/bootstrap.min.js')
-    script(src='js/scripts.js')
-    
+    script(src='${pageContext.request.contextPath}js/jquery.min.js')
+    script(src='${pageContext.request.contextPath}js/bootstrap.min.js')
+    script(src='${pageContext.request.contextPath}js/scripts.js')

@@ -1,16 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; ISO-8859-1" pageEncoding="UTF-8" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
   <head>
     <!-- Bootstrap core CSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/non-responsive.css" rel="stylesheet"/>
-    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/non-responsive.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/font-awesome.min.css" rel="stylesheet"/>
     <!-- Custom styles for this template-->
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/style.css" rel="stylesheet"/>
     <style>
       table {
       border-collapse: collapse;

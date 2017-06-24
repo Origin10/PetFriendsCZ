@@ -1,18 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<%@ page language="java" contentType="text/html; ISO-8859-1" pageEncoding="UTF-8" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>PetFriends</title>
     <!-- Bootstrap core CSS-->
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/non-responsive.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/non-responsive.css" rel="stylesheet"/>
     <!-- data table-->
-    <link href="css/jquery.dataTables.min.css" rel="stylesheet"/>
-    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/jquery.dataTables.min.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/font-awesome.min.css" rel="stylesheet"/>
     <!-- Custom styles for this template-->
-    <link href="css/CZ.css" rel="stylesheet"/>
+    <link href="${pageContext.request.contextPath}css/CZ.css" rel="stylesheet"/>
   </head>
   <body>
     <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
@@ -219,11 +221,11 @@
         </form>
       </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="${pageContext.request.contextPath}js/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}js/scripts.js"></script>
     <!-- data table-->
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/dataTables.bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}js/jquery.dataTables.min.js"></script>
+    <script src="${pageContext.request.contextPath}js/dataTables.bootstrap.min.js"></script>
   </body>
 </html>
