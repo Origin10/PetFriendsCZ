@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="insertpet.do" enctype="multipart/form-data"  method="post">
+	寵物名:	input type="text" name=pet_name>${message.name}
+	寵物照片: <input type="file" name="photo" >
+	寵物InFo: <input type="text" name="pet_info"><br>
+	主人ID: <input type="text" value="session加"><br> <input
+		type="submit" value="新增寵物" /><br>
+		</form>
+		
+	<div style="display:none" id="signin">
+		<form action="login.do" method="post"  >
+		<h4>會員登入</h4>
+		E-MAIL:   <input type="text" name="email" value="">	${message.email}<br>
+		Password: <input type="text" name="pwd" value="">	${message.pwd}<br>
+		<h4>${message.invalid}</h4>
+		<input type="submit" value ="登入"  >
+	</form>
+</div>
+		
+
+		
+<div style="display:none" id="regfrom">
+	<form action="register.do" method="post" >
+		<h4>會員註冊</h4>
+		會員名字:  <input type="text" name="name" value="">		${message.name}<br>
+		E-MAIL:   <input type="text" name="email" value="">	 	${message.email}<br>
+		Password: <input type="text" name="pwd" value="">	 	${message.pwd} <br>
+		寵物名字:  <input type="text" name="petName" value="">   ${message.petName}<br>
+		寵物簡介:   <input type="text" name="petInfo" value="">  ${message.petInfo}<br>	
+		<h4>${message.fail}</h4>	
+		<input type="submit" value ="註冊">
+	</form>
+</div>
+		
+		
+		
+	<form action="share.do" method="post">
+		Share: <input type="text" name="contentMsg"><input type="submit" name="share">	<h4>${message.cmsg}${message.invalid}</h4>
+	</form>
+		
+		
+		<div class="row list-unstyled pull-left" >
+					<c:forEach var="share" items="${getshare}">		
+					<h5><span class="label label-default">${share.share_date}</span></h5>
+							<c:out value="${share.share_date} ${share.share_content}" /><br>
+					</c:forEach>
+				</div>
+			</div>
+		
+		
+		
+<!-- 登入表單 -->		
+		
+		<div  id="signin">
+		<form action="login.do"   method="post">
+    		<div class="form-group">
+      				<label>E-MAIL:</label>
+     				<input class="form-control"  placeholder="E-MAIL:" name="email${message.email}">
+    		</div>
+  			<div class="form-group">
+    			  	<label for="pwd">Password:</label>
+      				<input  class="form-control" id="pwd" placeholder="Password" name="pwd${message.pwd}">
+    		</div>
+   	  				<button type="submit" class="btn btn-default">登入</button>
+  		</form>
+  		
+  		
+</div>
+		
+		
+		<!-- 註冊表單 -->
+<div style="display:none" id="regfrom">
+
+	<form action="register.do"   method="post">
+			<div class="form-group">
+      				<label>會員名字:</label>
+     				<input class="form-control"  placeholder="會員名字:" name="name${message.name}">
+    		</div>
+    		<div class="form-group">
+      				<label>E-MAIL:</label>
+     				<input class="form-control"  placeholder="E-MAIL:" name="email${message.email}">
+    		</div>
+  			<div class="form-group">
+    			  	<label for="pwd">Password:</label>
+      				<input  class="form-control" id="pwd" placeholder="Password" name="pwd${message.pwd}">
+    		</div>	
+   	  		<div class="form-group">
+      				<label>寵物名:</label>
+     				<input class="form-control"  placeholder="寵物名:" name="petName${message.petInfo}">
+    		</div>  		
+    		<div class="form-group">
+    			  	<label for="pwd">寵物簡介:</label>
+      				<input  class="form-control" id="pwd" placeholder="寵物InFo:" name="petInfo${message.petInfo}">
+    		</div>
+    		
+    		<button type="submit" class="btn btn-default">註冊</button>
+  	</form>
+				</div>
+
+		
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    font-family: Microsoft JhengHei;
+}
+
+.dropdown-menu {
+    width: 320px;
+    height: 100px;
+    font-size: 2rem;
+}
+
+.navbar-default {
+    background-color: #499975;
+    border-color: #499975;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 102%;
+    width: auto;
+}
+
+.profile-image {
+    padding-top: 0;
+    padding-bottom: 0;
+}

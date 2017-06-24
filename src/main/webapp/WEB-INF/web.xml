@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+		
+	<resource-ref>
+		<res-ref-name>jdbc/proj</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	
+	<filter>
+		<filter-name>loginFilter</filter-name>
+		<filter-class>filter.loginFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+			<url-pattern>/MemInfo.jsp</url-pattern>
+			<url-pattern>/memInfo.do</url-pattern>
+			<url-pattern>/needBloodForm.jsp</url-pattern>
+	</filter-mapping>
+
+
+	<filter>
+		<filter-name>alertfilter</filter-name>
+		<filter-class>filter.alertfilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>alertfilter</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+
+</web-app>

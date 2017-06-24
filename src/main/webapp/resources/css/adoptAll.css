@@ -1,0 +1,58 @@
+a:hover {
+    text-decoration: none;
+}
+
+#menu {
+    position: fixed;
+    right: 10%;
+    top: 95%;
+    width: 8em;
+    margin-top: -2.5em;
+}
+
+.date-form {
+    margin: 10px;
+}
+
+.thumbnail:hover {
+    background-color: #EBFAF3;
+    border-width: 3px;
+    opacity: 0.9;
+    box-shadow: 3px 3px 12px gray;
+    padding: 3px;
+}
+
+.jumbotron {
+    margin-top: 50px;
+}
+
+.modal-img {
+    max-height: 300px;
+    margin: 0 auto 1.5rem;
+    border: 2px solid #5cb85c;
+    border-radius: 10px;
+}
+
+.modal-header,
+.modal-footer {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    background-color: #EBFAF3;
+    color: #004224;
+    font-size: 2rem;
+}
+
+.modeal-body-scroll {
+    max-height: calc(100vh - 212px);
+    overflow-y: auto;
+}
+
+.modal-img {
+    max-height: 300px;
+    margin: 0 auto 1.5rem;
+    border: 2px solid #5cb85c;
+    border-radius: 10px;
+}
